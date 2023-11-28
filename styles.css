@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.left-container {
+  width: 250px;
+  border-radius: 10px 0 0 10px;
+  height: 400px;
+  background-size: cover;
+  background-image: url(/images/image-product-desktop.jpg);
+}
+.right-container {
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+.right-header {
+  font-size: 15px;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+.right-header-2 {
+  font-size: 25px;
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.discription {
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.first-price {
+  margin-right: 30px;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+.secound-price {
+  font-size: 12px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.button {
+  display: flex;
+  align-items: center;
+}
+button {
+  width: 100%;
+  height: 40px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+.bx-cart-alt {
+  font-size: 14px;
+}
+@media (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .left-container {
+    width: 90%;
+    border-radius: 10px 0 0 10px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/images/image-product-mobile.jpg);
+  }
+  .right-container {
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    width: 90%;
+    height: 400px;
+    background-color: white;
+  }
+  .discription {
+    font-size: 20px;
+    opacity: 0.7;
+    margin-bottom: 2%;
+  }
+  .button {
+    margin-top: 20px;
+  }
+}
